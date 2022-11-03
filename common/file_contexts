@@ -301,6 +301,7 @@
 /(vendor|system/vendor)/bin/wifi_ftmd           u:object_r:wifi_ftmd_exec:s0
 /(vendor|system/vendor)/bin/fingerprint\.qcom   u:object_r:fps_hal_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service-qti u:object_r:hal_keymaster_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.cryptfshw@1\.0-service-qti       u:object_r:hal_keymaster_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti u:object_r:hal_gatekeeper_qti_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.nxp\.hardware\.nfc@1\.0-service     u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/qdmastatsd          u:object_r:qdmastatsd_exec:s0
@@ -549,7 +550,6 @@
 /data/vendor/qti-logkit/logdata(/.*)?                               u:object_r:qti_logkit_pub_data_file:s0
 /data/vendor/qti-logkit/socket-privileged(/.*)?                     u:object_r:qti_logkit_priv_socket:s0
 /data/vendor/qti-logkit/socket-public(/.*)?                         u:object_r:qti_logkit_pub_socket:s0
-/data/misc/radio(/.*)?                                              u:object_r:radio_data_file:s0
 /data/vendor/radio(/.*)?                                            u:object_r:vendor_radio_data_file:s0
 /data/vendor/netmgr(/.*)?                                           u:object_r:netmgrd_data_file:s0
 /data/vendor/port_bridge(/.*)?                                      u:object_r:port_bridge_data_file:s0
@@ -676,7 +676,7 @@
 /vendor/firmware(/.*)?                                              u:object_r:firmware_file:s0
 /system/etc/firmware(/.*)?                                          u:object_r:firmware_file:s0
 /system/vendor/firmware(/.*)?                                       u:object_r:firmware_file:s0
-/firmware/image(/.*)?                                               u:object_r:firmware_file:s0
+/firmware(/.*)?                                                     u:object_r:firmware_file:s0
 
 /(vendor|system/vendor)/bin/grep                                    u:object_r:vendor_toolbox_exec:s0
 ##################################

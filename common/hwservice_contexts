@@ -50,7 +50,7 @@ com.qualcomm.qti.dpm.api::IdpmQmi                            u:object_r:hal_dpmq
 vendor.qti.imsrtpservice::IRTPService                        u:object_r:hal_imsrtp_hwservice:s0
 com.qualcomm.qti.bluetooth_audio::IBluetoothAudio            u:object_r:hal_audio_hwservice:s0
 com.qualcomm.qti.ant::IAntHci                                u:object_r:hal_bluetooth_hwservice:s0
-vendor.qti.hardware.fm::IFmHci                               u:object_r:hal_bluetooth_hwservice:s0
+vendor.qti.hardware.fm::IFmHci                               u:object_r:hal_fm_hwservice:s0
 vendor.qti.hardware.wipower::IWipower                        u:object_r:hal_bluetooth_hwservice:s0
 vendor.qti.hardware.perf::IPerf                              u:object_r:hal_perf_hwservice:s0
 com.qualcomm.qti.wifidisplayhal::IHDCPSession                u:object_r:wifidisplayhalservice_hwservice:s0
@@ -74,3 +74,5 @@ vendor.qti.hardware.qdutils_disp::IQdutilsDisp               u:object_r:hal_qdut
 vendor.qti.hardware.factory::IFactory                        u:object_r:hal_factory_qti_hwservice:s0
 vendor.qti.hardware.sensorscalibrate::ISensorsCalibrate       u:object_r:hal_sensorscalibrate_qti_hwservice:s0
 vendor.qti.hardware.limits::IThermal                         u:object_r:hal_thermal_hwservice:s0
+
+vendor.qti.hardware.cryptfshw::ICryptfsHw                    u:object_r:hal_keymaster_hwservice:s0
